@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+:root {
+    --primary-color: #f2726a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    /* căn giữa cho tất cả */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* căn giữa xong */
+    font-family: "Poppins";
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #242628;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    transition: 0.25s;
+    margin: 0 auto;
+    transform: translateY(25px);
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.avatar:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    transform: unset;
+}
+
+.information {
+    margin-top: 25px;
+}
+
+.contact a {
+    color: white;
+    margin: 25px 20px;
+    font-size: 23px;
+}
+
+.contact a:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.contact {
+    margin: 25px 0;
+}
+
+p {
+    color: var(--primary-color);
+}
+
+.contact-me {
+    background: transparent;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.contact-me:hover {
+    background: var(--primary-color);
+    transition: 0.5s;
+}
+
+h2 {
+    color: white;
+}
